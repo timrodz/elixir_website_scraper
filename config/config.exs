@@ -2,8 +2,59 @@ import Config
 
 validation_fields =
   case System.get_env("SCRAPER") do
-    "bg3" ->
-      [:name, :enchantment, :damage, :damage_type, :weight, :price, :special, :url, :category]
+    "bg3.weapons" ->
+      [
+        :name,
+        :enchantment,
+        :damage,
+        :damage_type,
+        :weight,
+        :price,
+        :special,
+        :url,
+        :category,
+        :rarity,
+        :image
+      ]
+
+    "bg3.equipment" ->
+      [
+        :name,
+        :weight,
+        :price,
+        :effects,
+        :url,
+        :category,
+        :rarity,
+        :image
+      ]
+
+    "bg3.armour" ->
+      [
+        :name,
+        :armour_class,
+        :stealth_disadvantage,
+        :weight,
+        :price,
+        :special,
+        :url,
+        :category,
+        :rarity,
+        :image
+      ]
+
+    "bg3.shields" ->
+      [
+        :name,
+        :armour_class_bonus,
+        :weight,
+        :price,
+        :special,
+        :url,
+        :category,
+        :rarity,
+        :image
+      ]
 
     _ ->
       [:url]

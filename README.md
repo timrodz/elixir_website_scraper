@@ -1,5 +1,3 @@
-# WebsiteScraper
+# Elixir Website Scraper
 
-```shell
-iex -S mix run -e "Crawly.Engine.start_spider(BaldursGate3Scraper)"
-```
+Crawlers can be found inside the `/scripts` directory. Run them with `sh <crawler-name>.sh`
